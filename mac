@@ -115,6 +115,9 @@ tap "thoughtbot/formulae"
 tap "homebrew/services"
 
 # Unix
+brew "autojump"
+append_to_zshrc '[ -f /usr/local/etc/profile.d/autojump.sh ] && . /usr/local/etc/profile.d/autojump.sh'
+
 brew "ctags"
 brew "git"
 brew "openssl"
