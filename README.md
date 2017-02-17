@@ -25,14 +25,10 @@ Install
 Download, review, then execute the script:
 
 ```sh
-curl --remote-name https://raw.githubusercontent.com/thoughtbot/laptop/master/mac
+curl --remote-name https://raw.githubusercontent.com/codeschool/laptop/master/mac
 less mac
 sh mac 2>&1 | tee ~/laptop.log
 ```
-
-Optionally, [install thoughtbot/dotfiles][dotfiles].
-
-[dotfiles]: https://github.com/thoughtbot/dotfiles#install
 
 Debugging
 ---------
@@ -40,7 +36,7 @@ Debugging
 Your last Laptop run will be saved to `~/laptop.log`.
 Read through it to see if you can debug the issue yourself.
 If not, copy the lines where the script failed into a
-[new GitHub Issue](https://github.com/thoughtbot/laptop/issues/new) for us.
+[new GitHub Issue](https://github.com/codeschool/laptop/issues/new) for us.
 Or, attach the whole log file as an attachment.
 
 What it sets up
@@ -54,6 +50,7 @@ macOS tools:
 
 Unix tools:
 
+* [autojump] for flying through directories
 * [Exuberant Ctags] for indexing files for vim tab completion
 * [Git] for version control
 * [OpenSSL] for Transport Layer Security (TLS)
@@ -62,6 +59,7 @@ Unix tools:
 * [Tmux] for saving project state and switching between projects
 * [Zsh] as your shell
 
+[autojump]: https://github.com/wting/autojump
 [Exuberant Ctags]: http://ctags.sourceforge.net/
 [Git]: https://git-scm.com/
 [OpenSSL]: https://www.openssl.org/
